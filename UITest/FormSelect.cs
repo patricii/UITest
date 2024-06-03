@@ -35,7 +35,7 @@ namespace UITest
                 fs1.labelSide.Text = "DUT 1";
                 fs1.Show();
             }
-            else if(side == "2")
+            else if (side == "2")
             {
                 FormApp fs1 = new FormApp();
                 iPosX = 0;
