@@ -10,11 +10,11 @@ namespace UITest
         {
             InitializeComponent();
         }
-        public void DisplayMessageMutex()
+        public void MutexMethodToCall()
         {
             mutexDut.WaitOne();
-            labelTextMutex.Text = "TEST MUTEX";
-            Thread.Sleep(2000);
+            // Anything to do!
+
             mutexDut.ReleaseMutex();
         }
     }
