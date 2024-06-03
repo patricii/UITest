@@ -36,7 +36,9 @@
             this.comboBoxSelect.FormattingEnabled = true;
             this.comboBoxSelect.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3",
+            "4"});
             this.comboBoxSelect.Location = new System.Drawing.Point(110, 12);
             this.comboBoxSelect.Name = "comboBoxSelect";
             this.comboBoxSelect.Size = new System.Drawing.Size(121, 21);
