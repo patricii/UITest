@@ -45,10 +45,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 384);
+            this.ClientSize = new System.Drawing.Size(357, 490);
             this.Controls.Add(this.labelSide);
             this.Name = "FormApp";
-            this.Text = "FormApp";
+            this.Text = "UIApplication v1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
