@@ -25,37 +25,37 @@ namespace UITest
 
             if (side == "1")
             {
-                FormApp fsLeft = new FormApp();
+                FormApp fs1 = new FormApp();
                 iPosX = 0;
                 iPosY = 0;
-                fsLeft.StartPosition = FormStartPosition.Manual;
-                fsLeft.Location = new Point(iPosX, iPosY);
-                fsLeft.Width = rect.Width / 2;
-                fsLeft.Height = rect.Height;
-                fsLeft.labelSide.Text = "LEFT";
-                fsLeft.Show();
+                fs1.StartPosition = FormStartPosition.Manual;
+                fs1.Location = new Point(iPosX, iPosY);
+                fs1.Width = rect.Width / 2;
+                fs1.Height = rect.Height;
+                fs1.labelSide.Text = "DUT 1";
+                fs1.Show();
             }
             else if(side == "2")
             {
-                FormApp fsLeft = new FormApp();
+                FormApp fs1 = new FormApp();
                 iPosX = 0;
                 iPosY = 0;
-                fsLeft.StartPosition = FormStartPosition.Manual;
-                fsLeft.Location = new Point(iPosX, iPosY);
-                fsLeft.Width = rect.Width / 2;
-                fsLeft.Height = rect.Height;
-                fsLeft.labelSide.Text = "LEFT";
-                fsLeft.Show();
+                fs1.StartPosition = FormStartPosition.Manual;
+                fs1.Location = new Point(iPosX, iPosY);
+                fs1.Width = rect.Width / 2;
+                fs1.Height = rect.Height;
+                fs1.labelSide.Text = "DUT 1";
+                fs1.Show();
 
-                FormApp fsRight = new FormApp();
+                FormApp fs2 = new FormApp();
                 iPosX = rect.Width / 2;
                 iPosY = 0;
-                fsRight.StartPosition = FormStartPosition.Manual;
-                fsRight.Location = new Point(iPosX, iPosY);
-                fsRight.Width = rect.Width / 2;
-                fsRight.Height = rect.Height;
-                fsRight.labelSide.Text = "RIGHT";
-                fsRight.Show();
+                fs2.StartPosition = FormStartPosition.Manual;
+                fs2.Location = new Point(iPosX, iPosY);
+                fs2.Width = rect.Width / 2;
+                fs2.Height = rect.Height;
+                fs2.labelSide.Text = "DUT 2";
+                fs2.Show();
             }
         }
     }
