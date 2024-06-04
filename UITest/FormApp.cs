@@ -38,6 +38,7 @@ namespace UITest
             textBoxLogs.TextAlign = HorizontalAlignment.Center;
             textBoxLogs.Text = value;
             textBoxLogs.BackColor = Color.Green;
+            textBoxtrackid.Enabled = true;
         }
         private void setDefault()
         {
@@ -61,6 +62,7 @@ namespace UITest
             }
             else
             {
+                textBoxtrackid.Enabled = false;
                 setDefault();
                 Thread thread = new Thread(() =>
                 {
