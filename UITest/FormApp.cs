@@ -27,6 +27,15 @@ namespace UITest
             }
             textBoxLogs.Text += value + Environment.NewLine;
         }
+        public void CleanTextBox(string value)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action<string>(CleanTextBox), new object[] { value });
+                return;
+            }
+            textBoxLogs.Text = value;
+        }
         private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
         {
             if (textBoxtrackid.Text.Length != 10)
@@ -43,8 +52,10 @@ namespace UITest
 
                         Application.DoEvents();
                         Thread.Sleep(500);
-                        AppendTextBox("TESTE -> " + i.ToString());
+                        AppendTextBox("TESTE -> " + i.ToString() + " -> " + labelSide.Text);
                     }
+                    MessageBox.Show(labelSide.Text + " : Finished!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    CleanTextBox("PASS!!!");
 
                 });
                 thread.Start();
