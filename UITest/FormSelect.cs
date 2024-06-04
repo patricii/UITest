@@ -10,7 +10,6 @@ namespace UITest
         {
             InitializeComponent();
         }
-
         private void comboBoxSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
             setDut(comboBoxSelect.Text);
@@ -45,9 +44,8 @@ namespace UITest
         private void setDut(string side)
         {
             if (side == "1")
-            {
                 createInstance(1, 0, 2);
-            }
+
             else if (side == "2")
             {
                 createInstance(1, 0, 2);

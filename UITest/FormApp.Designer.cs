@@ -89,6 +89,7 @@
             this.textBoxLogs.Size = new System.Drawing.Size(435, 677);
             this.textBoxLogs.TabIndex = 4;
             this.textBoxLogs.TabStop = false;
+            this.textBoxLogs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FormApp
             // 
