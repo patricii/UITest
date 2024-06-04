@@ -31,7 +31,7 @@ namespace UITest
                 fs1.StartPosition = FormStartPosition.Manual;
                 fs1.Location = new Point(iPosX, iPosY);
                 fs1.Width = rect.Width / 2;
-                fs1.Height = rect.Height;
+                fs1.Height = rect.Height - 50;
                 fs1.labelSide.Text = "DUT 1";
                 fs1.Show();
             }
@@ -43,7 +43,7 @@ namespace UITest
                 fs1.StartPosition = FormStartPosition.Manual;
                 fs1.Location = new Point(iPosX, iPosY);
                 fs1.Width = rect.Width / 2;
-                fs1.Height = rect.Height;
+                fs1.Height = rect.Height - 50;
                 fs1.labelSide.Text = "DUT 1";
                 fs1.Show();
 
@@ -53,7 +53,7 @@ namespace UITest
                 fs2.StartPosition = FormStartPosition.Manual;
                 fs2.Location = new Point(iPosX, iPosY);
                 fs2.Width = rect.Width / 2;
-                fs2.Height = rect.Height;
+                fs2.Height = rect.Height - 50;
                 fs2.labelSide.Text = "DUT 2";
                 fs2.Show();
             }
@@ -65,7 +65,7 @@ namespace UITest
                 fs1.StartPosition = FormStartPosition.Manual;
                 fs1.Location = new Point(iPosX, iPosY);
                 fs1.Width = rect.Width / 3;
-                fs1.Height = rect.Height;
+                fs1.Height = rect.Height - 50;
                 fs1.labelSide.Text = "DUT 1";
                 fs1.Show();
 
@@ -75,7 +75,7 @@ namespace UITest
                 fs2.StartPosition = FormStartPosition.Manual;
                 fs2.Location = new Point(iPosX, iPosY);
                 fs2.Width = rect.Width / 3;
-                fs2.Height = rect.Height;
+                fs2.Height = rect.Height - 50;
                 fs2.labelSide.Text = "DUT 2";
                 fs2.Show();
 
@@ -85,7 +85,7 @@ namespace UITest
                 fs3.StartPosition = FormStartPosition.Manual;
                 fs3.Location = new Point(iPosX, iPosY);
                 fs3.Width = rect.Width / 3;
-                fs3.Height = rect.Height;
+                fs3.Height = rect.Height - 50;
                 fs3.labelSide.Text = "DUT 3";
                 fs3.Show();
             }
@@ -97,7 +97,7 @@ namespace UITest
                 fs1.StartPosition = FormStartPosition.Manual;
                 fs1.Location = new Point(iPosX, iPosY);
                 fs1.Width = rect.Width / 4;
-                fs1.Height = rect.Height;
+                fs1.Height = rect.Height - 50;
                 fs1.labelSide.Text = "DUT 1";
                 fs1.Show();
 
@@ -107,7 +107,7 @@ namespace UITest
                 fs2.StartPosition = FormStartPosition.Manual;
                 fs2.Location = new Point(iPosX, iPosY);
                 fs2.Width = rect.Width / 4;
-                fs2.Height = rect.Height;
+                fs2.Height = rect.Height - 50;
                 fs2.labelSide.Text = "DUT 2";
                 fs2.Show();
 
@@ -117,7 +117,7 @@ namespace UITest
                 fs3.StartPosition = FormStartPosition.Manual;
                 fs3.Location = new Point(iPosX, iPosY);
                 fs3.Width = rect.Width / 4;
-                fs3.Height = rect.Height;
+                fs3.Height = rect.Height - 50;
                 fs3.labelSide.Text = "DUT 3";
                 fs3.Show();
 
@@ -128,7 +128,7 @@ namespace UITest
                 fs4.StartPosition = FormStartPosition.Manual;
                 fs4.Location = new Point(iPosX, iPosY);
                 fs4.Width = rect.Width / 4;
-                fs4.Height = rect.Height;
+                fs4.Height = rect.Height - 50;
                 fs4.labelSide.Text = "DUT 4";
                 fs4.Show();
             }

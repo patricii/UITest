@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -35,6 +36,7 @@ namespace UITest
                 return;
             }
             textBoxLogs.Text = value;
+            textBoxLogs.BackColor = Color.Green;
         }
         private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
         {
