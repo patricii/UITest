@@ -16,120 +16,55 @@ namespace UITest
             setDut(comboBoxSelect.Text);
             Hide();
         }
-        private void setDut(string side)
+        private void createInstance(int dutNumber, int divisionCalc, int referenceWidth)
         {
             // Set window position //
             int iPosX;
             int iPosY;
             Rectangle rect = SystemInformation.VirtualScreen;
+            FormApp fA = new FormApp();
 
+            if (divisionCalc == 0)
+                iPosX = 0;
+            else if (dutNumber == 3)
+                iPosX = rect.Width / divisionCalc + rect.Width / divisionCalc;
+            else if (dutNumber == 4)
+                iPosX = rect.Width / divisionCalc + rect.Width / divisionCalc + rect.Width / divisionCalc;
+            else
+                iPosX = rect.Width / divisionCalc;
+
+            iPosY = 0;
+            fA.StartPosition = FormStartPosition.Manual;
+            fA.Location = new Point(iPosX, iPosY);
+            fA.Width = rect.Width / referenceWidth;
+            fA.Height = rect.Height - 40;
+            fA.labelSide.Text = "DUT " + dutNumber.ToString();
+            fA.Show();
+
+        }
+        private void setDut(string side)
+        {
             if (side == "1")
             {
-                FormApp fs1 = new FormApp();
-                iPosX = 0;
-                iPosY = 0;
-                fs1.StartPosition = FormStartPosition.Manual;
-                fs1.Location = new Point(iPosX, iPosY);
-                fs1.Width = rect.Width / 2;
-                fs1.Height = rect.Height - 40;
-                fs1.labelSide.Text = "DUT 1";
-                fs1.Show();
+                createInstance(1, 0, 2);
             }
             else if (side == "2")
             {
-                FormApp fs1 = new FormApp();
-                iPosX = 0;
-                iPosY = 0;
-                fs1.StartPosition = FormStartPosition.Manual;
-                fs1.Location = new Point(iPosX, iPosY);
-                fs1.Width = rect.Width / 2;
-                fs1.Height = rect.Height - 40;
-                fs1.labelSide.Text = "DUT 1";
-                fs1.Show();
-
-                FormApp fs2 = new FormApp();
-                iPosX = rect.Width / 2;
-                iPosY = 0;
-                fs2.StartPosition = FormStartPosition.Manual;
-                fs2.Location = new Point(iPosX, iPosY);
-                fs2.Width = rect.Width / 2;
-                fs2.Height = rect.Height - 40;
-                fs2.labelSide.Text = "DUT 2";
-                fs2.Show();
+                createInstance(1, 0, 2);
+                createInstance(2, 2, 2);
             }
             else if (side == "3")
             {
-                FormApp fs1 = new FormApp();
-                iPosX = 0;
-                iPosY = 0;
-                fs1.StartPosition = FormStartPosition.Manual;
-                fs1.Location = new Point(iPosX, iPosY);
-                fs1.Width = rect.Width / 3;
-                fs1.Height = rect.Height - 40;
-                fs1.labelSide.Text = "DUT 1";
-                fs1.Show();
-
-                FormApp fs2 = new FormApp();
-                iPosX = rect.Width / 3;
-                iPosY = 0;
-                fs2.StartPosition = FormStartPosition.Manual;
-                fs2.Location = new Point(iPosX, iPosY);
-                fs2.Width = rect.Width / 3;
-                fs2.Height = rect.Height - 40;
-                fs2.labelSide.Text = "DUT 2";
-                fs2.Show();
-
-                FormApp fs3 = new FormApp();
-                iPosX = (rect.Width / 3 + rect.Width / 3);
-                iPosY = 0;
-                fs3.StartPosition = FormStartPosition.Manual;
-                fs3.Location = new Point(iPosX, iPosY);
-                fs3.Width = rect.Width / 3;
-                fs3.Height = rect.Height - 40;
-                fs3.labelSide.Text = "DUT 3";
-                fs3.Show();
+                createInstance(1, 0, 3);
+                createInstance(2, 3, 3);
+                createInstance(3, 3, 3);
             }
             else if (side == "4")
             {
-                FormApp fs1 = new FormApp();
-                iPosX = 0;
-                iPosY = 0;
-                fs1.StartPosition = FormStartPosition.Manual;
-                fs1.Location = new Point(iPosX, iPosY);
-                fs1.Width = rect.Width / 4;
-                fs1.Height = rect.Height - 40;
-                fs1.labelSide.Text = "DUT 1";
-                fs1.Show();
-
-                FormApp fs2 = new FormApp();
-                iPosX = rect.Width / 4;
-                iPosY = 0;
-                fs2.StartPosition = FormStartPosition.Manual;
-                fs2.Location = new Point(iPosX, iPosY);
-                fs2.Width = rect.Width / 4;
-                fs2.Height = rect.Height - 40;
-                fs2.labelSide.Text = "DUT 2";
-                fs2.Show();
-
-                FormApp fs3 = new FormApp();
-                iPosX = (rect.Width / 4 + rect.Width / 4);
-                iPosY = 0;
-                fs3.StartPosition = FormStartPosition.Manual;
-                fs3.Location = new Point(iPosX, iPosY);
-                fs3.Width = rect.Width / 4;
-                fs3.Height = rect.Height - 40;
-                fs3.labelSide.Text = "DUT 3";
-                fs3.Show();
-
-                FormApp fs4 = new FormApp();
-                iPosX = (rect.Width / 4 + rect.Width / 4 + rect.Width / 4);
-                iPosY = 0;
-                fs4.StartPosition = FormStartPosition.Manual;
-                fs4.Location = new Point(iPosX, iPosY);
-                fs4.Width = rect.Width / 4;
-                fs4.Height = rect.Height - 40;
-                fs4.labelSide.Text = "DUT 4";
-                fs4.Show();
+                createInstance(1, 0, 4);
+                createInstance(2, 4, 4);
+                createInstance(3, 4, 4);
+                createInstance(4, 4, 4);
             }
         }
     }
