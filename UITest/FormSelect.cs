@@ -41,23 +41,23 @@ namespace UITest
             fA.Show();
 
         }
-        private void setDut(string side)
+        private void setDut(string duts)
         {
-            if (side == "1")
+            if (duts == "1")
                 createInstance(1, 0, 2);
 
-            else if (side == "2")
+            else if (duts == "2")
             {
                 createInstance(1, 0, 2);
                 createInstance(2, 2, 2);
             }
-            else if (side == "3")
+            else if (duts == "3")
             {
                 createInstance(1, 0, 3);
                 createInstance(2, 3, 3);
                 createInstance(3, 3, 3);
             }
-            else if (side == "4")
+            else if (duts == "4")
             {
                 createInstance(1, 0, 4);
                 createInstance(2, 4, 4);
