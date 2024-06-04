@@ -49,8 +49,9 @@ namespace UITest
         private void fakeResults(int i)
         {
             Random random = new Random();
-            int result = random.Next(1200, 3900);
-            AppendTextBox(labelSide.Text + " ->TEST " + i.ToString() + " Result:" + result.ToString());
+            AppendTextBox(labelSide.Text + " ->TEST " + i.ToString() + " Result:" + random.Next(1200, 3900).ToString());
+            Application.DoEvents();
+            Thread.Sleep(300);
         }
         private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
         {
@@ -66,10 +67,7 @@ namespace UITest
                     for (int i = 0; i <= 30; i++)
                     {
                         fakeResults(i);
-                        Application.DoEvents();
-                        Thread.Sleep(500);
                     }
-                    //MessageBox.Show(labelSide.Text + " : Finished!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     CleanTextBox("PASS!!!");
                 });
                 thread.Start();
