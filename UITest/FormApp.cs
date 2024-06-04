@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace UITest
@@ -16,6 +17,38 @@ namespace UITest
             // Anything to do!
 
             mutexDut.ReleaseMutex();
+        }
+        public void AppendTextBox(string value)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action<string>(AppendTextBox), new object[] { value });
+                return;
+            }
+            textBoxLogs.Text += value + Environment.NewLine;
+        }
+        private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
+        {
+            if (textBoxtrackid.Text.Length != 10)
+            {
+                //do nothing!
+            }
+            else
+            {
+                textBoxtrackid.Text = "";
+                Thread thread = new Thread(() =>
+                {
+                    for (int i = 0; i <= 30; i++)
+                    {
+
+                        Application.DoEvents();
+                        Thread.Sleep(500);
+                        AppendTextBox("TESTE -> " + i.ToString());
+                    }
+
+                });
+                thread.Start();
+            }
         }
     }
 }

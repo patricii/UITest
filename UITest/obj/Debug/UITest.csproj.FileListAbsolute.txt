@@ -1,11 +1,10 @@
 C:\DEVELOPMENT PROJECTS\UITest\UITest\bin\Debug\UITest.exe.config
 C:\DEVELOPMENT PROJECTS\UITest\UITest\bin\Debug\UITest.exe
 C:\DEVELOPMENT PROJECTS\UITest\UITest\bin\Debug\UITest.pdb
+C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.FormApp.resources
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.FormSelect.resources
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.Properties.Resources.resources
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.csproj.GenerateResource.cache
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.csproj.CoreCompileInputs.cache
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.exe
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.pdb
-C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.csprojAssemblyReference.cache
-C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.FormApp.resources

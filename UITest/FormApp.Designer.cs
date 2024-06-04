@@ -30,13 +30,17 @@
         {
             this.labelSide = new System.Windows.Forms.Label();
             this.labelTextMutex = new System.Windows.Forms.Label();
+            this.textBoxtrackid = new System.Windows.Forms.TextBox();
+            this.labelTrackId = new System.Windows.Forms.Label();
+            this.textBoxLogs = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelSide
             // 
             this.labelSide.AutoSize = true;
             this.labelSide.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSide.Location = new System.Drawing.Point(17, 9);
+            this.labelSide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.labelSide.Location = new System.Drawing.Point(12, 9);
             this.labelSide.Name = "labelSide";
             this.labelSide.Size = new System.Drawing.Size(0, 20);
             this.labelSide.TabIndex = 0;
@@ -51,11 +55,47 @@
             this.labelTextMutex.Size = new System.Drawing.Size(0, 25);
             this.labelTextMutex.TabIndex = 1;
             // 
+            // textBoxtrackid
+            // 
+            this.textBoxtrackid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxtrackid.Location = new System.Drawing.Point(129, 71);
+            this.textBoxtrackid.Name = "textBoxtrackid";
+            this.textBoxtrackid.Size = new System.Drawing.Size(208, 20);
+            this.textBoxtrackid.TabIndex = 2;
+            this.textBoxtrackid.TextChanged += new System.EventHandler(this.textBoxtrackid_TextChanged);
+            // 
+            // labelTrackId
+            // 
+            this.labelTrackId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTrackId.AutoSize = true;
+            this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTrackId.Location = new System.Drawing.Point(206, 55);
+            this.labelTrackId.Name = "labelTrackId";
+            this.labelTrackId.Size = new System.Drawing.Size(61, 13);
+            this.labelTrackId.TabIndex = 3;
+            this.labelTrackId.Text = "TRACKID";
+            // 
+            // textBoxLogs
+            // 
+            this.textBoxLogs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLogs.Location = new System.Drawing.Point(16, 119);
+            this.textBoxLogs.Multiline = true;
+            this.textBoxLogs.Name = "textBoxLogs";
+            this.textBoxLogs.Size = new System.Drawing.Size(435, 677);
+            this.textBoxLogs.TabIndex = 4;
+            // 
             // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 490);
+            this.ClientSize = new System.Drawing.Size(463, 917);
+            this.Controls.Add(this.textBoxLogs);
+            this.Controls.Add(this.labelTrackId);
+            this.Controls.Add(this.textBoxtrackid);
             this.Controls.Add(this.labelTextMutex);
             this.Controls.Add(this.labelSide);
             this.Name = "FormApp";
@@ -69,5 +109,8 @@
 
         public System.Windows.Forms.Label labelSide;
         private System.Windows.Forms.Label labelTextMutex;
+        private System.Windows.Forms.TextBox textBoxtrackid;
+        private System.Windows.Forms.Label labelTrackId;
+        private System.Windows.Forms.TextBox textBoxLogs;
     }
 }
