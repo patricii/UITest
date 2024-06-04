@@ -38,6 +38,12 @@ namespace UITest
             textBoxLogs.Text = value;
             textBoxLogs.BackColor = Color.Green;
         }
+        private void setDefault()
+        {
+            textBoxtrackid.Text = "";
+            textBoxLogs.Text = "";
+            textBoxLogs.BackColor = Color.White;
+        }
         private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
         {
             if (textBoxtrackid.Text.Length != 10)
@@ -46,19 +52,17 @@ namespace UITest
             }
             else
             {
-                textBoxtrackid.Text = "";
+                setDefault();
                 Thread thread = new Thread(() =>
                 {
                     for (int i = 0; i <= 30; i++)
                     {
-
                         Application.DoEvents();
                         Thread.Sleep(500);
                         AppendTextBox("TESTE -> " + i.ToString() + " -> " + labelSide.Text);
                     }
                     //MessageBox.Show(labelSide.Text + " : Finished!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     CleanTextBox("PASS!!!");
-
                 });
                 thread.Start();
             }
