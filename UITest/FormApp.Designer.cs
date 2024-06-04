@@ -67,8 +67,7 @@
             // 
             // labelTrackId
             // 
-            this.labelTrackId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTrackId.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelTrackId.AutoSize = true;
             this.labelTrackId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTrackId.Location = new System.Drawing.Point(206, 55);

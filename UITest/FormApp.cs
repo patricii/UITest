@@ -56,7 +56,7 @@ namespace UITest
                         Thread.Sleep(500);
                         AppendTextBox("TESTE -> " + i.ToString() + " -> " + labelSide.Text);
                     }
-                    MessageBox.Show(labelSide.Text + " : Finished!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    //MessageBox.Show(labelSide.Text + " : Finished!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     CleanTextBox("PASS!!!");
 
                 });
