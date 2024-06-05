@@ -39,14 +39,10 @@ namespace UITest
             fA.Height = rect.Height - 40;
             fA.labelSide.Text = "DUT " + dutNumber.ToString();
             fA.Show();
-
         }
         private void setDut(string duts)
         {
-            if (duts == "1")
-                createInstance(1, 0, 2);
-
-            else if (duts == "2")
+            if (duts == "2")
             {
                 createInstance(1, 0, 2);
                 createInstance(2, 2, 2);
@@ -64,6 +60,8 @@ namespace UITest
                 createInstance(3, 4, 4);
                 createInstance(4, 4, 4);
             }
+            else
+                createInstance(1, 0, 2);
         }
     }
 }

@@ -56,10 +56,7 @@ namespace UITest
         }
         private void textBoxtrackid_TextChanged(object sender, System.EventArgs e)
         {
-            if (textBoxtrackid.Text.Length != 10)
-            {
-                //do nothing!
-            }
+            if (textBoxtrackid.Text.Length != 10) { }
             else
             {
                 textBoxtrackid.Enabled = false;
