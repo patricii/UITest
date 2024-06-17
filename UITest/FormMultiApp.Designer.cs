@@ -54,6 +54,7 @@
             this.textBoxDut1.Location = new System.Drawing.Point(3, 3);
             this.textBoxDut1.Multiline = true;
             this.textBoxDut1.Name = "textBoxDut1";
+            this.textBoxDut1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxDut1.Size = new System.Drawing.Size(344, 559);
             this.textBoxDut1.TabIndex = 0;
             // 
@@ -63,6 +64,7 @@
             this.textBoxDut2.Location = new System.Drawing.Point(353, 3);
             this.textBoxDut2.Multiline = true;
             this.textBoxDut2.Name = "textBoxDut2";
+            this.textBoxDut2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxDut2.Size = new System.Drawing.Size(344, 559);
             this.textBoxDut2.TabIndex = 1;
             // 
@@ -72,6 +74,7 @@
             this.textBoxDut3.Location = new System.Drawing.Point(703, 3);
             this.textBoxDut3.Multiline = true;
             this.textBoxDut3.Name = "textBoxDut3";
+            this.textBoxDut3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxDut3.Size = new System.Drawing.Size(344, 559);
             this.textBoxDut3.TabIndex = 2;
             // 
@@ -81,6 +84,7 @@
             this.textBoxDut4.Location = new System.Drawing.Point(1053, 3);
             this.textBoxDut4.Multiline = true;
             this.textBoxDut4.Name = "textBoxDut4";
+            this.textBoxDut4.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBoxDut4.Size = new System.Drawing.Size(344, 559);
             this.textBoxDut4.TabIndex = 3;
             // 

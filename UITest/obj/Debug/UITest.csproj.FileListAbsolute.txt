@@ -9,3 +9,4 @@ C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.csproj.CoreCompileInputs.
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.exe
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.pdb
 C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.FormMultiApp.resources
+C:\DEVELOPMENT PROJECTS\UITest\UITest\obj\Debug\UITest.csprojAssemblyReference.cache
