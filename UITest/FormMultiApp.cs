@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -31,6 +32,8 @@ namespace UITest
                 return;
             }
             textBoxDut1.Text += value + Environment.NewLine;
+            if (value.Contains("reached"))
+                textBoxDut1.BackColor = Color.Green;
         }
         private void AppendTextBoxDut2(string value)
         {
@@ -40,6 +43,9 @@ namespace UITest
                 return;
             }
             textBoxDut2.Text += value + Environment.NewLine;
+            if(value.Contains("reached"))
+                textBoxDut2.BackColor = Color.Green;
+
         }
         private void AppendTextBoxDut3(string value)
         {
@@ -49,6 +55,8 @@ namespace UITest
                 return;
             }
             textBoxDut3.Text += value + Environment.NewLine;
+            if (value.Contains("reached"))
+                textBoxDut3.BackColor = Color.Green;
         }
         private void AppendTextBoxDut4(string value)
         {
@@ -58,6 +66,8 @@ namespace UITest
                 return;
             }
             textBoxDut4.Text += value + Environment.NewLine;
+            if (value.Contains("reached"))
+                textBoxDut4.BackColor = Color.Green;
         }
         private void DeviceThread(int deviceIndex)
         {
@@ -108,7 +118,15 @@ namespace UITest
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            setInit();
             startThreads();
+        }
+        private void setInit()
+        {
+            textBoxDut1.BackColor = Color.White;
+            textBoxDut2.BackColor = Color.White;
+            textBoxDut3.BackColor = Color.White;
+            textBoxDut4.BackColor = Color.White;
         }
     }
 }
