@@ -7,13 +7,12 @@ namespace UITest
 {
     public partial class FormMultiApp : Form
     {
-
-        static CountdownEvent countdown = new CountdownEvent(4);
+        static CountdownEvent countdown;
         public FormMultiApp()
         {
             InitializeComponent();
         }
-        private void startThreads()
+        private void startThreadsTest()
         {
             for (int i = 0; i < 4; i++)
             {
@@ -94,6 +93,7 @@ namespace UITest
                 }
                 if (currentTemperature == targetTemperature)
                 {
+                    countdown.Signal();
                     switch (deviceIndex)
                     {
                         case 1:
@@ -109,20 +109,24 @@ namespace UITest
                             AppendTextBoxDut4($"Device {4}: Target temperature reached.");
                             break;
                     }
-                    countdown.Signal();
+                    countdown.Wait();
                     break;
                 }
-
                 Thread.Sleep(1000);
             }
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
             setInit();
-            startThreads();
+            startThreadsTest();
         }
         private void setInit()
         {
+            countdown = new CountdownEvent(4);
+            textBoxDut1.Text = "";
+            textBoxDut2.Text = "";
+            textBoxDut3.Text = "";
+            textBoxDut4.Text = "";
             textBoxDut1.BackColor = Color.White;
             textBoxDut2.BackColor = Color.White;
             textBoxDut3.BackColor = Color.White;
