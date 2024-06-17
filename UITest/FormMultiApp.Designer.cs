@@ -39,6 +39,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut1);
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut2);
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut3);
