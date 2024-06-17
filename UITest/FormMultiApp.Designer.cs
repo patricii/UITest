@@ -44,9 +44,9 @@
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut2);
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut3);
             this.flowLayoutPanel1.Controls.Add(this.textBoxDut4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 63);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(36, 63);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1403, 572);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1403, 607);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // textBoxDut1
@@ -56,7 +56,7 @@
             this.textBoxDut1.Multiline = true;
             this.textBoxDut1.Name = "textBoxDut1";
             this.textBoxDut1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDut1.Size = new System.Drawing.Size(344, 559);
+            this.textBoxDut1.Size = new System.Drawing.Size(344, 604);
             this.textBoxDut1.TabIndex = 0;
             // 
             // textBoxDut2
@@ -66,7 +66,7 @@
             this.textBoxDut2.Multiline = true;
             this.textBoxDut2.Name = "textBoxDut2";
             this.textBoxDut2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDut2.Size = new System.Drawing.Size(344, 559);
+            this.textBoxDut2.Size = new System.Drawing.Size(344, 604);
             this.textBoxDut2.TabIndex = 1;
             // 
             // textBoxDut3
@@ -76,7 +76,7 @@
             this.textBoxDut3.Multiline = true;
             this.textBoxDut3.Name = "textBoxDut3";
             this.textBoxDut3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDut3.Size = new System.Drawing.Size(344, 559);
+            this.textBoxDut3.Size = new System.Drawing.Size(344, 604);
             this.textBoxDut3.TabIndex = 2;
             // 
             // textBoxDut4
@@ -86,15 +86,15 @@
             this.textBoxDut4.Multiline = true;
             this.textBoxDut4.Name = "textBoxDut4";
             this.textBoxDut4.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDut4.Size = new System.Drawing.Size(344, 559);
+            this.textBoxDut4.Size = new System.Drawing.Size(344, 604);
             this.textBoxDut4.TabIndex = 3;
             // 
             // buttonStart
             // 
             this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStart.Location = new System.Drawing.Point(15, 34);
+            this.buttonStart.Location = new System.Drawing.Point(36, 12);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.Size = new System.Drawing.Size(75, 45);
             this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1427, 656);
+            this.ClientSize = new System.Drawing.Size(1474, 691);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FormMultiApp";
