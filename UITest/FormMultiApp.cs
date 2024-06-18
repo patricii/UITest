@@ -70,6 +70,11 @@ namespace UITest
         }
         private void DeviceThread(int deviceIndex)
         {
+            temperatureTest(deviceIndex);
+        }
+        private void temperatureTest(int deviceIndex)
+        {
+            countdown = new CountdownEvent(4);
             Random random = new Random();
             int targetTemperature = 100;
 
@@ -122,7 +127,6 @@ namespace UITest
         }
         private void setInit()
         {
-            countdown = new CountdownEvent(4);
             textBoxDut1.Text = "";
             textBoxDut2.Text = "";
             textBoxDut3.Text = "";
